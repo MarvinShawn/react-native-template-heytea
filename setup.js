@@ -5,7 +5,7 @@ if (fs.existsSync(path.join(__dirname, '.travis.yml'))) {
   process.exit()
 }
 
-const projectFilesToDelete = ['.flowconfig', 'App.js', '__tests__/App-test.js']
+const projectFilesToDelete = ['__tests__/App-test.js']
 
 const templateFilesToDelete = ['setup.js', 'README.md', 'LICENSE']
 
