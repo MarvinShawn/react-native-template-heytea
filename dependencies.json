@@ -1,0 +1,8 @@
+{
+    "mobx":"latest",
+    "mobx-react":"latest",
+    "react-navigation":"latest",
+    "react-native-gesture-handler":"latest",
+    "native-base":"latest",
+    "axios":"latest"
+}

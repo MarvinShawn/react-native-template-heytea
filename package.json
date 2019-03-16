@@ -1,31 +1,32 @@
 {
-    "name": "react-native-template-heytea",
-    "version": "0.0.1",
-    "description": "react-native typescript generic template",
-    "scripts": {
-      "test": "standard setup.js",
-      "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG",
-      "install": "node setup.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/heytea/react-native-template-heytea.git"
-    },
-    "keywords": [
-      "react-native",
-      "typescript",
-      "template",
-      "mobx",
-      "jest",
-      "boilerplate"
-    ],
-    "author": "heytea",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/heytea/react-native-template-heytea/issues"
-    },
-    "homepage": "https://github.com/heytea/react-native-template-heytea#readme",
-    "devDependencies": {
-      "standard": "12.0.1"
-    }
-  }
+  "name": "react-native-template-heytea",
+  "version": "0.0.1",
+  "description": "react-native typescript generic template",
+  "scripts": {
+    "test": "standard setup.js",
+    "prepublishOnly": "npm --no-git-tag-version version $TRAVIS_TAG",
+    "install": "node setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heytea/react-native-template-heytea.git"
+  },
+  "keywords": [
+    "react-native",
+    "typescript",
+    "template",
+    "mobx",
+    "jest",
+    "boilerplate"
+  ],
+  "author": "heytea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heytea/react-native-template-heytea/issues"
+  },
+  "homepage": "https://github.com/heytea/react-native-template-heytea#readme",
+  "devDependencies": {
+    "standard": "12.0.1"
+  },
+  "dependencies": {}
+}
