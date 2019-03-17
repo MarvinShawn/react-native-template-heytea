@@ -4,5 +4,6 @@
     "@types/react-test-renderer": "latest",
     "@types/react": "latest",
     "typescript": "latest",
-    "reactotron-react-native": "latest"
+    "reactotron-react-native": "latest",
+    "@babel/plugin-proposal-decorators": "latest"
   }

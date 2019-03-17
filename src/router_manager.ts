@@ -1,8 +1,11 @@
+import React from "react";
+
 import {
   createStackNavigator,
   createSwitchNavigator,
   createAppContainer,
-  createBottomTabNavigator
+  createBottomTabNavigator,
+  createDrawerNavigator
 } from "react-navigation";
 
 import {
@@ -10,7 +13,9 @@ import {
   Tab1Screen,
   Tab2Screen,
   Tab3Screen,
-  LoginScreen
+  LoginScreen,
+  TestScreen,
+  DrawerContentScreen
 } from "./screens";
 
 const Tab = createBottomTabNavigator({
@@ -25,12 +30,35 @@ const Tab = createBottomTabNavigator({
   }
 });
 
-//页面主导航
-const AppStack = createStackNavigator({
-  MainTabs: Tab
-});
+//栈导航
+const AppStack = createStackNavigator(
+  {
+    MainTabs: Tab,
+    Test: TestScreen
+  },
+  {
+    headerMode: "none"
+  }
+);
 
-// 身份认证
+//抽屉导航
+const DrawerStack = createDrawerNavigator(
+  {
+    AppMain: {
+      screen: AppStack
+    },
+    Drawer01: {
+      screen: TestScreen
+    }
+  },
+  {
+    initialRouteName: "AppMain",
+    drawerPosition: "left",
+    contentComponent: DrawerContentScreen
+  }
+);
+
+// Auth
 const AuthStack = createStackNavigator(
   {
     Login: LoginScreen
@@ -47,7 +75,7 @@ export const APPNavigator = createAppContainer(
     {
       AuthLoading: AuthLoadingScreen,
       App: {
-        screen: AppStack
+        screen: DrawerStack
       },
       Auth: {
         screen: AuthStack
